@@ -7,7 +7,14 @@
 Run it with:
 
 ```bash
-npx drt
+npx dep-require-time
+```
+
+Or:
+
+```bash
+npm i -g dep-require-time
+drt
 ```
 
 Result:
