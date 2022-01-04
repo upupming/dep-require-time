@@ -1,32 +1,33 @@
 {
-  "name": "my-ts-lib",
+  "name": "dep-require-time",
   "version": "0.0.0",
-  "description": "My awesome typescript library",
+  "description": "Require time measurement tool",
   "publishConfig": {
     "access": "public"
   },
   "files": [
     "dist"
   ],
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "exports": {
-    "require": "./dist/index.js",
-    "import": "./dist/index.mjs"
+  "module": "./dist/index.js",
+  "bin": {
+    "dep-require-time": "./bin/cli.js",
+    "drt": "./bin/cli.js"
   },
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build-fast": "tsup src/index.ts --format cjs,esm",
-    "build": "pnpm run build-fast -- --dts-resolve",
+    "build": "tsc",
+    "dev": "tsc --watch",
     "test": "vitest run",
     "prepublishOnly": "pnpm run build"
   },
   "license": "MIT",
   "devDependencies": {
     "@egoist/prettier-config": "1.0.0",
+    "@types/node": "17.0.6",
     "prettier": "2.5.1",
-    "tsup": "5.11.9",
-    "typescript": "4.5.4",
-    "vitest": "0.0.124"
+    "typescript": "4.5.4"
+  },
+  "dependencies": {
+    "chalk": "4.1.2"
   }
 }
