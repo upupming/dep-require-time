@@ -1,6 +1,6 @@
 {
   "name": "dep-require-time",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Require time measurement tool",
   "publishConfig": {
     "access": "public"
@@ -20,6 +20,18 @@
     "test": "node bin/cli.js",
     "prepublishOnly": "pnpm run build"
   },
+  "keywords": [
+    "dependencies",
+    "benchmark"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upupming/dep-require-time.git"
+  },
+  "bugs": {
+    "url": "https://github.com/upupming/dep-require-time/issues"
+  },
+  "homepage": "https://github.com/upupming/dep-require-time#readme",
   "license": "MIT",
   "devDependencies": {
     "@egoist/prettier-config": "1.0.0",

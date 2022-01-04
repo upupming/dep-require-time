@@ -19,4 +19,4 @@ drt
 
 Result:
 
-![drt](img/drt.png)
+![drt](./img/drt.png)
