@@ -1,4 +1,5 @@
 import chalk from 'chalk'
+import { performance } from 'perf_hooks'
 export const measureRequireTime = (id: string) => {
   const start = performance.now()
   try {

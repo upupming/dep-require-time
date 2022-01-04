@@ -17,7 +17,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "test": "vitest run",
+    "test": "node bin/cli.js",
     "prepublishOnly": "pnpm run build"
   },
   "license": "MIT",
