@@ -1,6 +1,6 @@
 {
   "name": "dep-require-time",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Require time measurement tool",
   "publishConfig": {
     "access": "public"
